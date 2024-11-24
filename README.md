@@ -36,13 +36,14 @@ git clone <<your looker git repo url>>
 To run the localization automation script, you must have Python installed on your machine along with the packages listed in the `requirements.txt` file. Install the requirements using the following command:
 
 ```bash
-pip install -r looker-localization-automation/requirements.txt
+cd looker-localization-automation
+pip install -r requirements.txt
 ```
 
 Once the requirements are installed, execute the script from the command line. The directory path should be the first argument, followed by language codes. For example, to translate to French (fr_FR) and Spanish (es_ES), run:
 
 ```bash
-python looker-localization-automation/lookml_localization.py /your_path_to_looker_project fr_FR es_ES
+python lookml_localization.py /your_path_to_looker_project fr_FR es_ES
 ```
 
 The script leverages the `looker_google_translate_lang_mapping.json` file to map language codes to their Google Translate counterparts. To add another language, simply update this file, adhering to the existing format.

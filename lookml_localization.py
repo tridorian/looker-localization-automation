@@ -17,7 +17,7 @@ group_item_label_pattern = re.compile(r'\bgroup_item_label:\s*"(.+?)"', re.DOTAL
 output = {}
 
 # Load language mapping
-with open('./looker-localization-automation/looker_google_translate_lang_mapping.json') as f:
+with open('./looker_google_translate_lang_mapping.json') as f:
     language_mapping = json.load(f)
 
 if len(sys.argv) < 3:
